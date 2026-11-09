@@ -1,7 +1,7 @@
 """Train + evaluate the CNN with speaker-independent cross-validation.
 
-    python train.py --seg 1.0 --fold 0          # one run (tonight)
-    python train.py --seg 0.25 0.5 1 2 3        # all folds, all lengths
+    python -m vc.train --seg 1.0 --fold 0          # one run
+    python -m vc.train --seg 0.25 0.5 1 2 3        # all folds, all lengths
 Each run appends one JSON line to results/runs.jsonl.
 """
 import argparse

@@ -1,6 +1,6 @@
 """Cross-dataset check: every ccmusic clip is SUNG, so a good model should say 'singing'.
 
-    python eval_ccmusic.py --ckpt checkpoints/cnn_seg0.5_fold0.pt
+    python -m vc.eval_ccmusic --ckpt checkpoints/cnn_seg0.5_fold0.pt
 Reads the Hugging Face .arrow files directly with pyarrow (no `datasets` needed).
 """
 import argparse

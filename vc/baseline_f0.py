@@ -3,7 +3,7 @@
 Question it answers: how much of speech-vs-singing is explained by F0 alone?
 Scored on exactly the same segments and folds as the CNN.
 
-    python baseline_f0.py --seg 0.25 0.5 1 2 3
+    python -m vc.baseline_f0 --seg 0.25 0.5 1 2 3
 """
 import argparse
 import json

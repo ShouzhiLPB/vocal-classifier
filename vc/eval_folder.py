@@ -1,6 +1,6 @@
 """Test a trained model on your own recordings (never used for training).
 
-    python eval_folder.py --ckpt checkpoints/cnn_seg1.0_fold0.pt --data data/own
+    python -m vc.eval_folder --ckpt checkpoints/cnn_seg1.0_fold0.pt --data data/own
 Layout: data/own/<NAME>/{read,sing}/*.wav   (same layout as NUS-48E)
 """
 import argparse
@@ -10,7 +10,7 @@ from pathlib import Path
 import numpy as np
 import torch
 
-from train import predict
+from vc.train import predict
 from vc.data import CLASS_NAMES, load_corpus, segments
 from vc.metrics import scores
 from vc.model import VocalCNN

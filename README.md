@@ -19,12 +19,13 @@ That decides how fast a real-time system (e.g. a unified speech/singing voice co
 ## Run
 
 ```
-python -m pytest -q                          # 7 checks, no data needed
-python train.py --seg 1.0 --fold 0           # one quick run
-python train.py --seg 0.25 0.5 1 2 3         # full CV, all lengths
-python baseline_f0.py --seg 0.25 0.5 1 2 3
-python eval_ccmusic.py --ckpt checkpoints/cnn_seg0.5_fold0.pt
-python report.py                             # table + results/accuracy_vs_length.png
+python -m pytest -q                                 # 7 checks, no data needed
+python -m vc.train --seg 1.0 --fold 0               # one quick run
+python -m vc.train --seg 0.25 0.5 1 2 3             # full CV, all lengths
+python -m vc.baseline_f0 --seg 0.25 0.5 1 2 3
+python -m vc.eval_ccmusic --ckpt checkpoints/cnn_seg0.5_fold0.pt
+python -m vc.eval_folder --ckpt checkpoints/cnn_seg1.0_fold0.pt --data data/own   # your own recordings
+python -m vc.report                                 # table + results/accuracy_vs_length.png
 ```
 
 Data layout: `data/nus-smc-corpus_48/<SINGER>/{read,sing}/*.wav`, `data/chest_falsetto/default/*/*.arrow`.
