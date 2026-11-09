@@ -1,0 +1,17 @@
+{
+  "ckpt": "checkpoints\\cnn_seg1.0_fold0.pt",
+  "seg": 1.0,
+  "accuracy": 0.9333333333333333,
+  "balanced_accuracy": 0.8888888888888888,
+  "macro_f1": 0.8943570124337015,
+  "confusion": [
+    [
+      22,
+      5
+    ],
+    [
+      4,
+      104
+    ]
+  ]
+}

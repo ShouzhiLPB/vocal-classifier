@@ -1,0 +1,8 @@
+# datasets (research-only / non-commercial licences) and own recordings: never upload
+data/
+# things that can be regenerated
+cache/
+checkpoints/
+.venv/
+__pycache__/
+.pytest_cache/

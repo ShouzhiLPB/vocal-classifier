@@ -1,0 +1,23 @@
+{
+  "ckpt": "checkpoints\\cnn_seg0.5_fold0.pt",
+  "female_chest": {
+    "n": 412,
+    "predicted_singing": 1.0
+  },
+  "female_falsetto": {
+    "n": 408,
+    "predicted_singing": 1.0
+  },
+  "male_chest": {
+    "n": 230,
+    "predicted_singing": 1.0
+  },
+  "male_falsetto": {
+    "n": 230,
+    "predicted_singing": 1.0
+  },
+  "all": {
+    "n": 1280,
+    "predicted_singing": 1.0
+  }
+}

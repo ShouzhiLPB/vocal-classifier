@@ -1,0 +1,7 @@
+# torch is installed separately with CUDA, see https://pytorch.org/get-started/locally/
+librosa>=0.10
+soundfile
+scikit-learn
+matplotlib
+pyarrow
+pytest
